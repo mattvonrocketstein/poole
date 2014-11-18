@@ -659,6 +659,7 @@ def serve(project, port):
         sys.exit(1)
 
     os.chdir(root)
+    print 'serving on port: ',port
     server = HTTPServer(('', port), SimpleHTTPRequestHandler)
     server.serve_forever()
 
