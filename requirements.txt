@@ -1,1 +1,1 @@
-markdown==2.5.1
+markdown==2.4.1
