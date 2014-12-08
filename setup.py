@@ -22,8 +22,6 @@ setup(
     name         = 'poole',
     version      = __version__,
     description  = '',
-    author       = 'mattvonrocketstein',
-    author_email = '$author@gmail',
     url          = base_url,
     download_url = base_url+'/tarball/0.1',
     packages     = ['poole'],
