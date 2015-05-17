@@ -608,6 +608,7 @@ def build(project, opts):
         extensions = opts.md_ext
         extensions.append('markdown.extensions.fenced_code')
         extensions.append('markdown.extensions.tables')
+        extensions.append('markdown.extensions.admonition')
         extensions = list(set(extensions))
 
         page.html = markdown.Markdown(extensions=extensions).convert(out)
@@ -641,7 +642,7 @@ def build(project, opts):
         out = regx_escp.sub(repl_escp, out)
 
         # make relative links absolute
-        out = regx_rurl.sub(repl_rurl, out)
+        #out = regx_rurl.sub(repl_rurl, out)
 
         # write HTML page
         fname = page.fname.replace(dir_in, dir_out)
